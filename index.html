@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+        <style>
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #e6e8ed;
+                
+                font-family: 'Montserrat', sans-serif;
+                
+                
+            }
+            .row-container{
+                display: flex;
+                background-color: white;
+                width: 70%;
+                border-radius: 20px;
+                overflow: hidden;
+                margin: 2% auto;
+            }
+            .img-container{
+                display: inline-block;
+                overflow: hidden;
+                width: 50%;
+            }
+            .img-container img{
+                display:block;
+                width: 100%;
+            }
+            .login-form{
+                margin-top: 4%;
+                display: block;
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                
+                
+            }
+            .login-form >h1{
+                
+                 
+                font-weight: 500;
+            }
+            .arrow{
+                display: inline-block;
+                vertical-align: central;
+                color: #4670e3;
+                
+            }
+            .login-form form{
+                display:block;
+                width: 90%;
+                margin-top: 35%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .login-form label{ 
+                padding: 3px 0;
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+                margin-top: 10px;
+                color:grey;
+                font-size: 15px;
+            }
+            .login-form input{
+                padding: 8px 6px;
+                display: block;
+                border-style: none;
+                border: 2px solid buttonface;
+                border-radius: 3px;
+                width: 70%;
+                color: #323635;
+                font-size: 19px;
+                margin: 0 auto;
+                
+                
+            }
+            .login-form button{
+                display: block;
+                width: 70%;
+                border-style: none;
+                padding: 10px 6px;
+                margin-top: 10%;
+                background-color:#4670e3;
+                border-radius: 6px;
+                color: White;
+                margin-left: auto;
+                font-size: 19px;
+                margin-right: auto;
+                font-weight: 500;
+                
+                    
+            }
+            .register-link{
+                text-align: center;
+                margin-top: 120px;
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="row-container">
+            <div class="img-container">
+            <img src="images/loginform.jpg" alt="login form image"/>
+        </div>
+        <div class="login-form">
+            <h1>LogIn to your Servlet account <span class="arrow"> &rarr;</span> </h1>
+            
+            <form action="RegisterServlet" method="post">
+                 <label>Username</label>
+                 <input type="text" name="user_name" placeholder="Name" required> 
+                <label>Email Id</label>
+                <input type="email" name="user_email" placeholder="Email Id" required > 
+                <label>Password</label> 
+                <input type="password" name="user_password" placeholder="Password" required >
+                <button type="submit">Sign In</button>
+
+            </form>
+            
+            <h1 class="register-link">You Don't have account ? <a href="#">Click here</a></h1>
+            
+        </div>
+        </section>
+        
+    </body>
+</html>
